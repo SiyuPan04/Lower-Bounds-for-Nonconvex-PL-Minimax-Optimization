@@ -1,0 +1,18 @@
+name = "NCPLRevised"
+version = "0.1.0"
+keywords = ["optimization", "formal-verification"]
+defaultTargets = ["NCPLRevised"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "11d11a11a667a8fa8ea19d9456fe059f683e308f"
+
+[[lean_lib]]
+name = "NCPLRevised"
